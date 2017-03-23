@@ -1,0 +1,12 @@
+<p>
+  <center><h3>Jukebox</h3></center>
+</p>
+<p>
+  <ul>
+  <% @db.each do |result| %>
+    <li>
+      <a href=/tracks/<%= result[0] %>><%= result[1] %></a>
+    </li>
+  <% end %>
+</ul>
+</p>
